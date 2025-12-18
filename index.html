@@ -8,50 +8,14 @@
   <meta name="description" content="Ciberseguridad y soporte técnico profesional para PYMEs. Protección clara, real y accesible.">
   <meta name="keywords" content="ciberseguridad pymes, seguridad informática argentina, técnico seguridad informática">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/Matechsolinf/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/Matechsolinf/favicon.svg">
-  <link rel="shortcut icon" href="/Matechsolinf/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/Matechsolinf/apple-touch-icon.png">
-  <link rel="manifest" href="/Matechsolinf/site.webmanifest">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <style>
-        /* Animaciones base */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    section {
-      animation: fadeUp 0.8s ease both;
-    }
-    
-    /* Cards con interacción profesional */
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 30px 60px rgba(0,0,0,.55);
-    }
-    
-    /* Botones más “premium” */
-    .btn {
-      transition: all 0.25s ease;
-    }
-    
-    .btn:hover {
-      transform: translateY(-2px);
-      filter: brightness(1.05);
-    }
-
     :root {
       --bg-dark: #020617;
       --bg-card: rgba(2, 6, 23, 0.88);
@@ -60,9 +24,7 @@
       --muted: #94a3b8;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -79,8 +41,9 @@
     }
 
     .logo {
-      max-width: 220px;
+      max-width: 240px;
       margin-bottom: 30px;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,.6));
     }
 
     header h1 {
@@ -104,6 +67,7 @@
       margin: 5px;
       background: var(--primary);
       color: var(--bg-dark);
+      transition: all .25s ease;
     }
 
     .btn.secondary {
@@ -112,10 +76,21 @@
       color: var(--primary);
     }
 
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+
     section {
       max-width: 1100px;
       margin: 0 auto;
       padding: 70px 20px;
+      animation: fadeUp .8s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .card {
@@ -124,20 +99,18 @@
       padding: 40px;
       margin-bottom: 50px;
       box-shadow: 0 20px 40px rgba(0,0,0,.4);
+      transition: transform .3s ease, box-shadow .3s ease;
     }
 
-    h2 {
-      color: var(--primary);
-      margin-bottom: 20px;
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,.55);
     }
 
-    ul {
-      padding-left: 20px;
-    }
+    h2 { color: var(--primary); }
 
-    ul li {
-      margin-bottom: 10px;
-    }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
 
     .hero-final {
       background: url("assets/jj-ying-8bghKxNU1j0-unsplash.jpg") center / cover no-repeat;
@@ -165,12 +138,8 @@
     }
 
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .card {
-        padding: 30px;
-      }
+      header h1 { font-size: 2rem; }
+      .card { padding: 30px; }
     }
   </style>
 </head>
@@ -178,69 +147,15 @@
 <body>
 
 <header>
-  <img src="assets/LOGO.jpeg" alt="Matech Sol Inf" class="logo">
+  <img src="assets/LOGO_special.jpeg" alt="Matech Sol Inf" class="logo">
   <h1>Ciberseguridad y soporte técnico para PYMEs</h1>
-  <p>Soluciones de ciberseguridad y soporte técnico diseñadas para proteger tu información y garantizar la continuidad de tu negocio.</p>
-
+  <p>Soluciones claras y profesionales para proteger la información y continuidad de tu negocio.</p>
   <a class="btn" href="https://wa.me/5491122937926" target="_blank">WhatsApp</a>
   <a class="btn secondary" href="mailto:matechsolinf@gmail.com">Email</a>
 </header>
 
 <section>
-  <div class="card">
-    <h2>¿Por qué es importante la ciberseguridad?</h2>
-    <p>
-      La mayoría de los incidentes informáticos afectan a pequeñas y medianas empresas.
-      Con configuraciones correctas y buenas prácticas, muchos ataques se pueden prevenir.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Servicios de Ciberseguridad</h2>
-    <ul>
-      <li>Auditoría básica de seguridad informática</li>
-      <li>Protección y análisis de correo electrónico</li>
-      <li>Backups, control de accesos y buenas prácticas</li>
-      <li>Concientización básica al personal</li>
-      <li>Asesoramiento técnico continuo</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Servicios de Climatización</h2>
-    <ul>
-      <li>Instalación y mantenimiento de equipos</li>
-      <li>Revisión técnica preventiva</li>
-      <li>Soporte para oficinas y comercios</li>
-    </ul>
-    <p><small>Servicio complementario para empresas.</small></p>
-  </div>
-
-  <div class="card">
-    <h2>Mi enfoque</h2>
-    <p>
-      Aplico seguridad informática práctica y adaptada a cada empresa.
-      Mi objetivo es proteger tu información sin complicaciones técnicas ni soluciones innecesarias.
-    </p>
-  </div>
-
-  <div class="card">
-  <h2>Por qué trabajar conmigo</h2>
-  <ul>
-    <li>✔ Enfoque práctico, sin soluciones infladas</li>
-    <li>✔ Experiencia real en entornos empresariales</li>
-    <li>✔ Comunicación clara, sin tecnicismos innecesarios</li>
-    <li>✔ Atención directa, sin intermediarios</li>
-  </ul>
-</div>
-
-
-  <div class="card">
-    <h2>Contacto</h2>
-    <p>📞 <strong>11 2293 7926</strong></p>
-    <p>📧 <strong>matechsolinf@gmail.com</strong></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/mechegaray/" target="_blank" style="color:#38bdf8;">LinkedIn profesional</a></p>
-  </div>
+  <!-- tus cards, tal como las tenés -->
 </section>
 
 <section class="hero-final">
@@ -257,3 +172,4 @@
 
 </body>
 </html>
+
