@@ -1,268 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>MATECH Sol Inf | Ciberseguridad para PyMEs</title>
+<meta charset="UTF-8">
+<title>MATECH Sol Inf | Ciberseguridad para PyMEs</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ciberseguridad y soporte profesional para PyMEs en Argentina y LATAM. Protección real, clara y accesible.">
-  
-  <link rel="icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ciberseguridad profesional para PyMEs en Argentina y LATAM. Auditoría, hardening, M365, continuidad operativa.">
 
-  <style>
-    :root {
-      --bg: #020617;
-      --panel: #020617f2;
-      --card: #020617e6;
-      --primary: #38bdf8;
-      --secondary: #22c55e;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-    }
+<link rel="icon" href="/favicon.ico">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+:root {
+  --bg:#020617;
+  --panel:#020617f2;
+  --card:#020617e6;
+  --primary:#38bdf8;
+  --accent:#22c55e;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+}
 
-    body {
-      font-family: system-ui, sans-serif;
-      background: url("assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center / cover fixed;
-      color: var(--text);
-      line-height: 1.6;
-    }
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family:system-ui,sans-serif;
+  background:url("assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
+  color:var(--text);
+  line-height:1.6;
+}
 
-    a { color: inherit; text-decoration: none; }
+.container { max-width:1100px; margin:auto; padding:80px 20px; }
+h1,h2 { color:var(--primary); }
+h1 { font-size:2.5rem; margin-bottom:14px; }
+h2 { text-align:center; margin-bottom:40px; }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
-    }
+a { text-decoration:none; color:inherit; }
 
-    /* HERO */
-    header {
-      background: linear-gradient(180deg, rgba(2,6,23,.97), rgba(2,6,23,.9));
-      text-align: center;
-      padding: 120px 20px 100px;
-    }
+header {
+  background:linear-gradient(180deg,rgba(2,6,23,.97),rgba(2,6,23,.9));
+  text-align:center;
+  padding:120px 20px 100px;
+}
 
-    .logo-main {
-      max-width: 300px;
-      margin-bottom: 30px;
-      filter: drop-shadow(0 10px 25px rgba(0,0,0,.7));
-    }
+.logo { max-width:280px; margin-bottom:30px; filter:drop-shadow(0 10px 25px rgba(0,0,0,.7)); }
 
-    h1 {
-      color: var(--primary);
-      font-size: 2.6rem;
-      margin-bottom: 15px;
-    }
+.subtitle { max-width:720px; margin:auto; color:#cbd5f5; }
 
-    .subtitle {
-      max-width: 720px;
-      margin: auto;
-      color: #cbd5f5;
-      font-size: 1.1rem;
-    }
+.actions { margin-top:35px; }
 
-    .actions {
-      margin-top: 35px;
-    }
+.btn {
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:8px;
+  font-weight:600;
+  margin:6px;
+  background:var(--primary);
+  color:var(--bg);
+  transition:.25s;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 600;
-      margin: 6px;
-      background: var(--primary);
-      color: var(--bg);
-      transition: .25s;
-    }
+.btn.secondary {
+  background:transparent;
+  border:1px solid var(--primary);
+  color:var(--primary);
+}
 
-    .btn.secondary {
-      background: transparent;
-      border: 1px solid var(--primary);
-      color: var(--primary);
-    }
+.btn:hover { transform:translateY(-2px); filter:brightness(1.1); }
 
-    .btn:hover {
-      transform: translateY(-2px);
-      filter: brightness(1.1);
-    }
+section { background:var(--panel); }
 
-    /* SECTIONS */
-    section {
-      background: var(--panel);
-    }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
 
-    h2 {
-      color: var(--primary);
-      margin-bottom: 35px;
-      text-align: center;
-      font-size: 2rem;
-    }
+.card {
+  background:var(--card);
+  padding:32px;
+  border-radius:16px;
+  box-shadow:0 15px 35px rgba(0,0,0,.5);
+  transition:.3s;
+}
+.card:hover { transform:translateY(-6px); }
 
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-    }
+.card h3 { color:var(--accent); margin-bottom:10px; }
 
-    .card {
-      background: var(--card);
-      padding: 35px;
-      border-radius: 16px;
-      box-shadow: 0 15px 35px rgba(0,0,0,.5);
-      transition: .3s;
-    }
+.badges {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  text-align:center;
+}
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
+.badge {
+  padding:22px;
+  border:1px solid #1e293b;
+  border-radius:14px;
+  background:rgba(2,6,23,.7);
+}
 
-    .card h3 {
-      color: var(--secondary);
-      margin-bottom: 12px;
-    }
+.final {
+  background:url("assets/jj-ying-8bghKxNU1j0-unsplash.jpg") center/cover no-repeat;
+}
+.final .overlay {
+  background:rgba(2,6,23,.88);
+  text-align:center;
+  padding:90px 20px;
+}
 
-    .muted {
-      color: var(--muted);
-    }
+footer {
+  text-align:center;
+  padding:40px 20px;
+  font-size:.9rem;
+  color:var(--muted);
+  background:#020617;
+  border-top:1px solid #1e293b;
+}
 
-    /* DIFFERENTIALS */
-    .badges {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      text-align: center;
-    }
-
-    .badge {
-      padding: 25px;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      background: rgba(2,6,23,.7);
-    }
-
-    /* CTA FINAL */
-    .final {
-      background: url("assets/jj-ying-8bghKxNU1j0-unsplash.jpg") center / cover no-repeat;
-    }
-
-    .final .overlay {
-      background: rgba(2,6,23,.88);
-      text-align: center;
-      padding: 90px 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9rem;
-      color: var(--muted);
-      background: #020617;
-      border-top: 1px solid #1e293b;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      .logo-main { max-width: 230px; }
-    }
-  </style>
+@media(max-width:768px){
+  h1{font-size:2rem;}
+  .logo{max-width:220px;}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <img src="assets/LOGO_special.jpg" class="logo-main" alt="MATECH Sol Inf">
+  <img src="assets/LOGO_special.jpg" class="logo" alt="MATECH Sol Inf">
   <h1>Ciberseguridad para PyMEs</h1>
   <p class="subtitle">
-    Protección real de la información y continuidad operativa.
-    Soluciones claras, aplicables y sin humo técnico.
+    Protección real de la información, continuidad operativa y reducción de riesgos.
+    Soluciones técnicas aplicables, sin sobreingeniería.
   </p>
 
   <div class="actions">
-    <a class="btn" href="https://wa.me/5491122937926" target="_blank">WhatsApp</a>
-    <a class="btn secondary" href="mailto:matechsolinf@gmail.com">Email</a>
+    <a class="btn" href="https://wa.me/5491122937926" target="_blank">Diagnóstico sin cargo</a>
+    <a class="btn secondary" href="mailto:matechsolinf@gmail.com">Contacto</a>
   </div>
 </header>
 
 <section>
-  <div class="container">
-    <h2>Servicios de Ciberseguridad</h2>
+<div class="container">
+<h2>Servicios</h2>
+<div class="grid">
 
-    <div class="grid">
-      <div class="card">
-        <h3>Auditoría de Seguridad</h3>
-        <p>Evaluación de riesgos, configuraciones y puntos críticos.</p>
-      </div>
+<div class="card">
+<h3>Auditoría Técnica</h3>
+<p>Revisión de infraestructura, accesos, backups y exposición real al riesgo.</p>
+</div>
 
-      <div class="card">
-        <h3>Correo y Phishing</h3>
-        <p>Protección, análisis y reducción de ataques por email.</p>
-      </div>
+<div class="card">
+<h3>Hardening</h3>
+<p>Endurecimiento de sistemas Windows, redes y servicios críticos.</p>
+</div>
 
-      <div class="card">
-        <h3>Backups y Accesos</h3>
-        <p>Estrategias de respaldo, control de privilegios y continuidad.</p>
-      </div>
+<div class="card">
+<h3>Seguridad en Microsoft 365</h3>
+<p>Protección de correo, MFA, políticas, monitoreo y respuesta.</p>
+</div>
 
-      <div class="card">
-        <h3>Concientización</h3>
-        <p>Capacitación básica para reducir errores humanos.</p>
-      </div>
+<div class="card">
+<h3>Backups y Continuidad</h3>
+<p>Estrategias de recuperación y validación de restauración.</p>
+</div>
 
-      <div class="card">
-        <h3>Hardening</h3>
-        <p>Optimización de sistemas y servicios críticos.</p>
-      </div>
+<div class="card">
+<h3>Concientización</h3>
+<p>Capacitación práctica orientada a reducción de incidentes humanos.</p>
+</div>
 
-      <div class="card">
-        <h3>Soporte Continuo</h3>
-        <p>Acompañamiento técnico real, sin intermediarios.</p>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<h3>Soporte Especializado</h3>
+<p>Acompañamiento técnico continuo sin intermediarios.</p>
+</div>
+
+</div>
+</div>
 </section>
 
 <section>
-  <div class="container">
-    <h2>Diferenciales</h2>
-
-    <div class="badges">
-      <div class="badge">✔ Enfoque práctico</div>
-      <div class="badge">✔ Atención directa</div>
-      <div class="badge">✔ Experiencia PyME</div>
-      <div class="badge">✔ Alcance LATAM</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>Climatización (Servicio Complementario)</h2>
-    <p class="muted" style="text-align:center">
-      Instalación · Mantenimiento · Revisión preventiva para oficinas y comercios.
-    </p>
-  </div>
+<div class="container">
+<h2>Autoridad Técnica</h2>
+<div class="badges">
+<div class="badge">✔ Experiencia en entornos PyME</div>
+<div class="badge">✔ Implementación y operación M365</div>
+<div class="badge">✔ Enfoque preventivo y correctivo</div>
+<div class="badge">✔ Documentación y trazabilidad</div>
+</div>
+</div>
 </section>
 
 <section class="final">
-  <div class="overlay">
-    <h2>Protegé tu negocio hoy</h2>
-    <p class="subtitle">Diagnóstico inicial sin cargo</p>
-    <div class="actions">
-      <a class="btn" href="https://wa.me/5491122937926" target="_blank">Contactar ahora</a>
-    </div>
-  </div>
+<div class="overlay">
+<h2>Protegé tu negocio hoy</h2>
+<p class="subtitle">Evaluación inicial sin costo y sin compromiso</p>
+<div class="actions">
+<a class="btn" href="https://wa.me/5491122937926" target="_blank">Solicitar diagnóstico</a>
+</div>
+</div>
 </section>
 
 <footer>
-  © 2026 MATECH Sol Inf · Argentina
+<p>© 2026 MATECH Sol Inf · Argentina</p>
+<p><a href="climatizacion.html">Servicio de climatización</a></p>
 </footer>
 
 </body>
