@@ -86,12 +86,17 @@ section { background:var(--panel); }
 .card h3 { color:var(--accent); margin-bottom:10px; }
 
 .badges {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   text-align: center;
 }
+
+.badge {
+  width: 260px;
+}
+
 
 .badge {
   padding:22px;
