@@ -122,6 +122,28 @@ footer {
   h1{font-size:2rem;}
   .logo{max-width:220px;}
 }
+
+  /* CTA flotante */
+.floating-cta {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #25d366;
+  color: #020617;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,.4);
+  z-index: 999;
+  transition: .25s;
+}
+
+.floating-cta:hover {
+  transform: translateY(-3px) scale(1.03);
+  filter: brightness(1.05);
+}
+
+  
 </style>
 </head>
 
@@ -223,5 +245,12 @@ footer {
 <p><a href="climatizacion.html">Servicio de climatización</a></p>
 </footer>
 
+<a 
+  href="https://wa.me/5491122937926" 
+  target="_blank" 
+  class="floating-cta">
+  WhatsApp
+</a>
+  
 </body>
 </html>
