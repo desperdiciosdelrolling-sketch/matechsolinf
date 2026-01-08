@@ -13,7 +13,6 @@
 <meta property="og:url" content="https://desperdiciosdelrolling-sketch.github.io/matechsolinf/">
 <meta property="og:image" content="https://desperdiciosdelrolling-sketch.github.io/matechsolinf/assets/LOGO_special.jpg">
 
-
 <link rel="icon" href="/favicon.ico">
 
 <style>
@@ -28,6 +27,7 @@
 }
 
 * { box-sizing:border-box; margin:0; padding:0; }
+
 body {
   font-family:system-ui,sans-serif;
   background:url("assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
@@ -36,6 +36,7 @@ body {
 }
 
 .container { max-width:1100px; margin:auto; padding:80px 20px; }
+
 h1,h2 { color:var(--primary); }
 h1 { font-size:2.5rem; margin-bottom:14px; }
 h2 { text-align:center; margin-bottom:40px; }
@@ -48,7 +49,11 @@ header {
   padding:120px 20px 100px;
 }
 
-.logo { max-width:280px; margin-bottom:30px; filter:drop-shadow(0 10px 25px rgba(0,0,0,.7)); }
+.logo {
+  max-width:280px;
+  margin-bottom:30px;
+  filter:drop-shadow(0 10px 25px rgba(0,0,0,.7));
+}
 
 .subtitle { max-width:720px; margin:auto; color:#cbd5f5; }
 
@@ -93,32 +98,42 @@ section { background:var(--panel); }
 .card h3 { color:var(--accent); margin-bottom:10px; }
 
 .badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  text-align: center;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:24px;
+  text-align:center;
 }
 
 .badge {
-  width: 260px;
-}
-
-
-.badge {
+  width:260px;
   padding:22px;
   border:1px solid #1e293b;
   border-radius:14px;
   background:rgba(2,6,23,.7);
 }
 
+/* HERO FINAL CON IMAGEN LAZY */
 .final {
-  background:url("assets/jj-ying-8bghKxNU1j0-unsplash.jpg") center/cover no-repeat;
+  position:relative;
+  overflow:hidden;
 }
+
 .final .overlay {
+  position:relative;
+  z-index:2;
   background:rgba(2,6,23,.88);
   text-align:center;
   padding:90px 20px;
+}
+
+.bg-img {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
 }
 
 footer {
@@ -135,7 +150,7 @@ footer {
   .logo{max-width:220px;}
 }
 
-  /* CTA flotante */
+/* CTA flotante */
 .floating-cta {
   position: fixed;
   bottom: 22px;
@@ -154,15 +169,19 @@ footer {
   transform: translateY(-3px) scale(1.03);
   filter: brightness(1.05);
 }
-
-  
 </style>
 </head>
 
 <body>
 
 <header>
-  <img src="assets/LOGO_special.jpg" class="logo" alt="MATECH Sol Inf">
+  <img 
+    src="assets/LOGO_special.jpg" 
+    class="logo" 
+    alt="MATECH Sol Inf"
+    loading="lazy"
+  >
+
   <h1>Ciberseguridad para PyMEs</h1>
   <p class="subtitle">
     Protección real de la información, continuidad operativa y reducción de riesgos.
@@ -178,38 +197,37 @@ footer {
 <section>
 <div class="container">
 <h2>Servicios</h2>
+
 <div class="grid">
+  <div class="card">
+    <h3>Auditoría Técnica</h3>
+    <p>Revisión de infraestructura, accesos, backups y exposición real al riesgo.</p>
+  </div>
 
-<div class="card">
-<h3>Auditoría Técnica</h3>
-<p>Revisión de infraestructura, accesos, backups y exposición real al riesgo.</p>
-</div>
+  <div class="card">
+    <h3>Hardening</h3>
+    <p>Endurecimiento de sistemas Windows, redes y servicios críticos.</p>
+  </div>
 
-<div class="card">
-<h3>Hardening</h3>
-<p>Endurecimiento de sistemas Windows, redes y servicios críticos.</p>
-</div>
+  <div class="card">
+    <h3>Seguridad en Microsoft 365</h3>
+    <p>Protección de correo, MFA, políticas, monitoreo y respuesta.</p>
+  </div>
 
-<div class="card">
-<h3>Seguridad en Microsoft 365</h3>
-<p>Protección de correo, MFA, políticas, monitoreo y respuesta.</p>
-</div>
+  <div class="card">
+    <h3>Backups y Continuidad</h3>
+    <p>Estrategias de recuperación y validación de restauración.</p>
+  </div>
 
-<div class="card">
-<h3>Backups y Continuidad</h3>
-<p>Estrategias de recuperación y validación de restauración.</p>
-</div>
+  <div class="card">
+    <h3>Concientización</h3>
+    <p>Capacitación práctica orientada a reducción de incidentes humanos.</p>
+  </div>
 
-<div class="card">
-<h3>Concientización</h3>
-<p>Capacitación práctica orientada a reducción de incidentes humanos.</p>
-</div>
-
-<div class="card">
-<h3>Soporte Especializado</h3>
-<p>Acompañamiento técnico continuo sin intermediarios.</p>
-</div>
-
+  <div class="card">
+    <h3>Soporte Especializado</h3>
+    <p>Acompañamiento técnico continuo sin intermediarios.</p>
+  </div>
 </div>
 </div>
 </section>
@@ -241,20 +259,30 @@ footer {
 </div>
 </div>
 </section>
-  
+
 <section class="final">
-<div class="overlay">
-<h2>Protegé tu negocio hoy</h2>
-<p class="subtitle">Evaluación inicial sin costo y sin compromiso</p>
-<div class="actions">
-<a class="btn" href="https://wa.me/5491122937926" target="_blank">Solicitar diagnóstico</a>
-</div>
-</div>
+  <!-- Imagen de fondo con lazy load real -->
+  <img
+    src="assets/jj-ying-8bghKxNU1j0-unsplash.jpg"
+    alt="Infraestructura tecnológica"
+    loading="lazy"
+    class="bg-img"
+  >
+
+  <div class="overlay">
+    <h2>Protegé tu negocio hoy</h2>
+    <p class="subtitle">Evaluación inicial sin costo y sin compromiso</p>
+    <div class="actions">
+      <a class="btn" href="https://wa.me/5491122937926" target="_blank">
+        Solicitar diagnóstico
+      </a>
+    </div>
+  </div>
 </section>
 
 <footer>
-<p>© 2026 MATECH Sol Inf · Argentina</p>
-<p><a href="climatizacion.html">Servicio de climatización</a></p>
+  <p>© 2026 MATECH Sol Inf · Argentina</p>
+  <p><a href="climatizacion.html">Servicio de climatización</a></p>
 </footer>
 
 <a 
@@ -263,6 +291,6 @@ footer {
   class="floating-cta">
   WhatsApp
 </a>
-  
+
 </body>
 </html>
