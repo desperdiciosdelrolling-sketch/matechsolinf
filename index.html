@@ -7,12 +7,18 @@
     <meta name="description" content="Servicios de ciberseguridad para pymes en Buenos Aires. Protección corporativa contra ransomware, mitigación de phishing, configuración de Microsoft 365 y resguardo de datos.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.matechsolinf.ar/">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta name="google-site-verification" content="vlVbkXvRjhGQ5VBefh3oOtvW9MzY2m_DkIVM4ErYDII" />
-
+ 
+    <!-- Preload de recursos críticos para mejorar recarga -->
+    <link rel="preload" as="image" href="assets/LOGO_special.jpg">
+    <link rel="preload" as="image" href="assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg">
+ 
+    <!-- Font Awesome optimizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKFkayk6+S+FUbh89f+y0Of+NKxfI5iaJfborUlZu3Sr5z+LMySoMs2+UIbP7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+ 
     <style>
         :root {
           --bg: #020617;
@@ -23,27 +29,27 @@
           --text: #e5e7eb;
           --muted: #94a3b8;
         }
-
+ 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
         body {
           font-family: system-ui, sans-serif;
           background: url("assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
-          background-color: var(--bg); /* Fallback si la imagen no carga */
+          background-color: var(--bg);
           color: var(--text);
           line-height: 1.6;
         }
-
+ 
         .container { max-width: 1100px; margin: auto; padding: 80px 20px; }
-
+ 
         h1, h2, h3 { color: var(--primary); }
         h1 { font-size: 2.5rem; margin-bottom: 14px; }
         h2 { margin-bottom: 20px; font-size: 2rem; border-bottom: 2px solid #1e293b; padding-bottom: 10px; }
-
+ 
         header { text-align: center; padding: 120px 20px; background: rgba(2, 6, 23, 0.8); }
-
+ 
         .logo { max-width: 260px; margin-bottom: 20px; }
-
+ 
         .actions { margin-top: 20px; }
         .actions a {
           display: inline-block;
@@ -55,41 +61,83 @@
           text-decoration: none;
           font-weight: bold;
         }
-
+ 
         section { background: var(--panel); }
-
+ 
         .grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
           gap: 25px;
         }
-
+ 
         .whatsapp {
             background-color: #25D366 !important;
         }
-
+ 
         .card { background: var(--card); padding: 25px; border-radius: 10px; border: 1px solid #1e293b; }
         .card p { margin: 10px 0; color: var(--muted); }
         .card a { color: var(--primary); text-decoration: none; }
         .card a:hover { text-decoration: underline; }
-
+ 
         footer { text-align: center; padding: 30px; border-top: 1px solid #1e293b; background: var(--bg); }
+ 
+        /* Estilos para el botón flotante de WhatsApp */
+        .whatsapp-float {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          background-color: #25D366;
+          color: white;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          z-index: 999;
+          text-decoration: none;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+ 
+        .whatsapp-float:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
+        }
+ 
+        /* Animación sutil de pulsación */
+        @keyframes pulse-whatsapp {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+        }
+ 
+        .whatsapp-float.pulse {
+          animation: pulse-whatsapp 2s infinite;
+        }
+ 
+        /* Optimizaciones de rendimiento */
+        img {
+          max-width: 100%;
+          height: auto;
+        }
     </style>
 </head>
-
+ 
 <body>
-
+ 
     <header>
-      <img src="assets/LOGO_special.jpg" class="logo" alt="Logotipo de MATECH Soluciones Informáticas">
+      <img src="assets/LOGO_special.jpg" class="logo" alt="Logotipo de MATECH Soluciones Informáticas" loading="lazy">
       <h1>Ciberseguridad Estratégica para Pymes en Buenos Aires</h1>
       <p>Protección perimetral, defensa contra ransomware, mitigación de phishing y resguardo de información crítica.</p>
       
       <div class="actions">
-        <a class="whatsapp" href="https://wa.me/5491122937926"><i class="fa fa-whatsapp" aria-hidden="true"></i>Solicitar Diagnóstico</a>
+        <a class="whatsapp" href="https://wa.me/5491122937926"><i class="fa-brands fa-whatsapp"></i> Solicitar Diagnóstico</a>
         <a href="mailto:matechsolinf@gmail.com">Contacto Rápido</a>
       </div>
     </header>
-
+ 
     <main>
         <section>
             <div class="container">
@@ -102,12 +150,12 @@
                     <p>Prevención activa, aislamiento de amenazas y planes de recuperación ante incidentes cibernéticos.</p>
                     <a href="proteccion-ransomware-pymes.html">Ver más detalles</a>
                   </div>
-
+ 
                   <div class="card">
                     <h3>Seguridad Microsoft 365</h3>
                     <p>Configuración de políticas, control de accesos, y protocolos de correo para evitar suplantación de identidad.</p>
                   </div>
-
+ 
                   <div class="card">
                     <h3>Backups y Continuidad</h3>
                     <p>Respaldo automatizado y redundancia de datos para asegurar que tu negocio nunca se detenga.</p>
@@ -115,7 +163,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <section>
             <div class="container">
                 <h2>Servicios de Climatización</h2>
@@ -125,12 +173,41 @@
             </div>
         </section>
     </main>
-
+ 
     <footer>
       <p><strong>MATECH Soluciones Informáticas</strong></p>
       <p>Buenos Aires, Argentina</p>
       <p>Email: matechsolinf@gmail.com</p>
     </footer>
-
+ 
+    <!-- Botón flotante de WhatsApp que sigue al usuario -->
+    <a href="https://wa.me/5491122937926" class="whatsapp-float pulse" title="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+ 
+    <!-- Script optimizado para mejorar rendimiento -->
+    <script>
+      // Lazy loading nativo para imágenes
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+ 
+      // Preconexión a dominios externos para mejorar velocidad
+      const link = document.createElement('link');
+      link.rel = 'preconnect';
+      link.href = 'https://cdnjs.cloudflare.com';
+      document.head.appendChild(link);
+ 
+      // Animación del botón flotante (opcional: quitar la clase 'pulse' después de 5 segundos)
+      document.addEventListener('DOMContentLoaded', () => {
+        const whatsappBtn = document.querySelector('.whatsapp-float');
+        setTimeout(() => {
+          whatsappBtn.classList.remove('pulse');
+        }, 5000);
+      });
+    </script>
+ 
 </body>
 </html>
