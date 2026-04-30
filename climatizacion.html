@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>MATECH | Climatización para Empresas en Buenos Aires</title>
+<title>Climatización para empresas en Buenos Aires | MATECH</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Instalación y mantenimiento de aire acondicionado para empresas en Buenos Aires. Servicio profesional para oficinas y comercios.">
@@ -15,150 +15,149 @@
   --panel:#020617f2;
   --card:#020617e6;
   --primary:#38bdf8;
-  --accent:#22c55e;
   --text:#e5e7eb;
   --muted:#94a3b8;
 }
 
-* { box-sizing:border-box; margin:0; padding:0; }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-body {
+body{
   font-family:system-ui,sans-serif;
-  background:url("assets/jj-ying-8bghKxNU1j0-unsplash.jpg") center/cover fixed;
+  background:url("assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
   color:var(--text);
-  line-height:1.6;
   padding-top:70px;
 }
 
 /* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(2, 6, 23, 0.95);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid #1e293b;
-  z-index: 1000;
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#020617;
+  border-bottom:1px solid #1e293b;
+  z-index:1000;
 }
 
-.nav-container {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+.nav-container{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
 }
 
-.nav-logo {
-  font-weight: bold;
-  color: var(--primary);
-  font-size: 1.2rem;
+.nav-logo img{
+  height:40px;
 }
 
-.nav-links a {
-  margin-left: 20px;
-  color: var(--text);
-  font-size: 0.95rem;
+.nav-links a{
+  margin-left:20px;
+  color:#fff;
+  text-decoration:none;
 }
 
-.nav-links a:hover {
-  color: var(--primary);
+.nav-links a:hover{
+  color:var(--primary);
 }
 
-.nav-cta {
-  background: var(--primary);
-  color: #020617;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-weight: bold;
+.nav-cta{
+  background:var(--primary);
+  padding:8px 14px;
+  border-radius:6px;
+  color:#020617;
+  font-weight:bold;
 }
 
 /* HEADER */
-.logo {
-  max-width:220px;
+header{
+  text-align:center;
+  padding:140px 20px 100px;
+  background:rgba(2,6,23,.85);
+}
+
+.logo{
+  max-width:240px;
   margin-bottom:20px;
 }
 
-header {
-  background:linear-gradient(180deg,rgba(2,6,23,.97),rgba(2,6,23,.9));
-  text-align:center;
-  padding:100px 20px 80px;
+header h1{
+  font-size:2.4rem;
+  margin-bottom:15px;
 }
 
-.subtitle {
-  max-width:680px;
-  margin:20px auto;
-  color:#cbd5f5;
-}
-
-.btn {
-  display:inline-block;
-  padding:14px 28px;
-  border-radius:8px;
-  font-weight:600;
-  margin:6px;
-  background:var(--primary);
-  color:var(--bg);
-  transition:.25s;
-}
-
-.btn.secondary {
-  background:transparent;
-  border:1px solid var(--primary);
-  color:var(--primary);
-}
-
-.btn:hover {
-  transform:translateY(-2px);
-  filter:brightness(1.1);
-}
-
-/* CONTENIDO */
-.container {
-  max-width:1000px;
+.subtitle{
+  max-width:700px;
   margin:auto;
-  padding:60px 20px;
+  color:var(--muted);
 }
 
-h1,h2 {
-  color:var(--primary);
+/* CONTENT */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+h2{
   text-align:center;
+  margin-bottom:30px;
+  color:var(--primary);
 }
 
-.container h1 {
-  margin-bottom:40px;
-}
-
-section {
-  background:var(--panel);
-}
-
-.grid {
+.grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
 }
 
-.card {
+.card{
   background:var(--card);
-  padding:32px;
-  border-radius:16px;
-  box-shadow:0 15px 35px rgba(0,0,0,.5);
+  padding:30px;
+  border-radius:14px;
+  border:1px solid #1e293b;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:var(--muted);
 }
 
 /* FOOTER */
-footer {
+footer{
   text-align:center;
-  padding:40px 20px;
-  font-size:.9rem;
-  color:var(--muted);
-  background:#020617;
+  padding:30px;
   border-top:1px solid #1e293b;
 }
 
-a { text-decoration:none; color:inherit; }
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  color:#fff;
+  text-decoration:none;
+  box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -166,7 +165,10 @@ a { text-decoration:none; color:inherit; }
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
-    <a href="index.html" class="nav-logo">MATECH</a>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/Gemini_Generated_Image_.png" alt="MATECH">
+    </a>
+
     <div class="nav-links">
       <a href="index.html">Inicio</a>
       <a href="proteccion-ransomware-pymes.html">Ciberseguridad</a>
@@ -177,52 +179,47 @@ a { text-decoration:none; color:inherit; }
   </div>
 </nav>
 
+<!-- HEADER -->
 <header>
-  <img src="assets/Gemini_Generated_Image_.png" class="logo" alt="MATECH">
-  <h2>Ciberseguridad y Servicios IT para Empresas</h2>
+  <img src="assets/Gemini_Generated_Image_.png" class="logo">
+  <h1>Instalación y Mantenimiento de Aire Acondicionado</h1>
   <p class="subtitle">
-    Soluciones tecnológicas para pymes: seguridad informática y climatización profesional.
+    Servicio profesional de climatización para oficinas, comercios y pymes en Buenos Aires.
   </p>
-
-  <div>
-    <a class="btn" href="https://wa.me/5491122937926" target="_blank">Solicitar presupuesto</a>
-    <a class="btn secondary" href="index.html">Volver al inicio</a>
-  </div>
 </header>
 
+<!-- SERVICIOS -->
 <div class="container">
-  <h1>Instalación y Mantenimiento de Aire Acondicionado en Buenos Aires</h1>
+<h2>Servicios de Climatización</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Instalación</h3>
+<p>Montaje profesional de equipos split y configuración óptima.</p>
 </div>
 
-<section>
-  <div class="container">
-    <h2>Servicios</h2>
+<div class="card">
+<h3>Mantenimiento</h3>
+<p>Limpieza, revisión de gas, drenaje y rendimiento.</p>
+</div>
 
-    <div class="grid">
+<div class="card">
+<h3>Revisión Preventiva</h3>
+<p>Detección anticipada de fallas y mejora del consumo.</p>
+</div>
 
-      <div class="card">
-        <h3>Instalación</h3>
-        <p>Montaje profesional de equipos split y configuración correcta para asegurar rendimiento y durabilidad.</p>
-      </div>
-
-      <div class="card">
-        <h3>Mantenimiento</h3>
-        <p>Limpieza profunda, revisión de gas, drenajes y control de funcionamiento general.</p>
-      </div>
-
-      <div class="card">
-        <h3>Revisión Preventiva</h3>
-        <p>Chequeo anticipado para evitar fallas, reducir consumo eléctrico y prolongar la vida útil del equipo.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
+</div>
+</div>
 
 <footer>
-  <p>© 2026 MATECH Soluciones Informáticas</p>
-  <p><a href="index.html">Volver al sitio principal</a></p>
+<p>© 2026 MATECH Soluciones Informáticas</p>
 </footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/5491122937926" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
