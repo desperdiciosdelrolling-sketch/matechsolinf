@@ -3,14 +3,22 @@
 
   <url>
     <loc>https://www.matechsolinf.ar/</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.matechsolinf.ar/climatizacion.html</loc>
+    <priority>0.7</priority>
   </url>
 
   <url>
-  <loc>https://www.matechsolinf.ar/proteccion-ransomware-pymes.html</loc>
+    <loc>https://www.matechsolinf.ar/proteccion-ransomware-pymes.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+  <loc>https://www.matechsolinf.ar/blog/ransomware-empresas-2026.html</loc>
+  <priority>0.8</priority>
   </url>
 
 </urlset>
