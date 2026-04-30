@@ -1,0 +1,73 @@
+:root {
+  --bg: #020617;
+  --panel: #020617f2;
+  --card: #020617e6;
+  --primary: #38bdf8;
+  --accent: #22c55e;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: url("../assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+}
+
+header {
+  text-align: center;
+  padding: 120px 20px;
+  background: rgba(2, 6, 23, 0.8);
+}
+
+.logo {
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #1e293b;
+  background: var(--bg);
+}
