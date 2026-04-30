@@ -2,40 +2,272 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Protección contra ransomware para pymes | MATECH</title>
+<title>Protección contra ransomware para pymes en Buenos Aires | MATECH</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Protección contra ransomware para empresas en Buenos Aires.">
+<meta name="description" content="Protección contra ransomware para empresas en Buenos Aires. Prevención, backups, hardening y seguridad en Microsoft 365.">
 
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="assets/favicon.ico">
+
+<style>
+:root {
+  --bg:#020617;
+  --panel:#020617f2;
+  --card:#020617e6;
+  --primary:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:system-ui;
+  background:url("assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
+  color:var(--text);
+  padding-top:70px;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#020617;
+  border-bottom:1px solid #1e293b;
+  z-index:1000;
+}
+
+.nav-container{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+}
+
+.nav-logo img{
+  height:40px;
+}
+
+.nav-links a{
+  margin-left:20px;
+  color:#fff;
+}
+
+.nav-links a:hover{
+  color:var(--primary);
+}
+
+.nav-cta{
+  background:var(--primary);
+  padding:8px 14px;
+  border-radius:6px;
+  color:#020617;
+  font-weight:bold;
+}
+
+/* HERO */
+header{
+  text-align:center;
+  padding:140px 20px 100px;
+  background:rgba(2,6,23,.85);
+}
+
+.logo{
+  max-width:260px;
+  margin-bottom:20px;
+}
+
+header h1{
+  font-size:2.4rem;
+  margin-bottom:15px;
+}
+
+.subtitle{
+  max-width:700px;
+  margin:auto;
+  color:var(--muted);
+}
+
+.actions{
+  margin-top:25px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 26px;
+  border-radius:8px;
+  margin:6px;
+  font-weight:bold;
+  background:var(--primary);
+  color:#020617;
+}
+
+.btn.secondary{
+  background:transparent;
+  border:1px solid var(--primary);
+  color:var(--primary);
+}
+
+/* CONTENT */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+h2{
+  color:var(--primary);
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:10px;
+  border:1px solid #1e293b;
+}
+
+.card p{
+  color:var(--muted);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid #1e293b;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  color:#fff;
+  text-decoration:none;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
 <nav class="navbar">
-<div class="nav-container">
-<a href="index.html">MATECH</a>
-<div class="nav-links">
-<a href="index.html">Inicio</a>
-<a href="proteccion-ransomware-pymes.html">Ciberseguridad</a>
-<a href="climatizacion.html">Climatización</a>
-<a href="blog/ransomware-empresas-2026.html">Blog</a>
-<a href="https://wa.me/5491122937926" class="nav-cta">Contacto</a>
-</div>
-</div>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/Gemini_Generated_Image_.png">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proteccion-ransomware-pymes.html">Ciberseguridad</a>
+      <a href="climatizacion.html">Climatización</a>
+      <a href="blog/ransomware-empresas-2026.html">Blog</a>
+      <a href="https://wa.me/5491122937926" class="nav-cta">Contacto</a>
+    </div>
+  </div>
 </nav>
 
 <header>
-<h2>Ciberseguridad Empresarial</h2>
+  <img src="assets/Gemini_Generated_Image_.png" class="logo">
+  <h1>Protección contra Ransomware para Empresas</h1>
+  <p class="subtitle">
+    Evitá la pérdida total de información y la interrupción de tu negocio con estrategias reales de defensa.
+  </p>
+
+  <div class="actions">
+    <a href="https://wa.me/5491122937926" class="btn">Solicitar diagnóstico</a>
+    <a href="blog/ransomware-empresas-2026.html" class="btn secondary">Ver artículo</a>
+  </div>
 </header>
 
 <div class="container">
-<h1>Protección contra ransomware para pymes</h1>
 
-<p>El ransomware puede detener completamente una empresa.</p>
+<h2>¿Qué es el ransomware?</h2>
+<p>
+El ransomware es un tipo de malware que cifra la información de una empresa y exige un pago para recuperarla. En la mayoría de los casos, el daño es irreversible si no se cuenta con una estrategia previa.
+</p>
 
-<a href="https://wa.me/5491122937926">Solicitar diagnóstico</a>
+<h2>¿Cómo afectan a las pymes?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Pérdida de datos</h3>
+<p>Información crítica inaccesible o eliminada.</p>
 </div>
+
+<div class="card">
+<h3>Parálisis operativa</h3>
+<p>Imposibilidad de trabajar durante días o semanas.</p>
+</div>
+
+<div class="card">
+<h3>Impacto económico</h3>
+<p>Costos de recuperación y pérdida de clientes.</p>
+</div>
+
+</div>
+
+<h2>¿Cómo protegemos tu empresa?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Backups seguros</h3>
+<p>Copias de seguridad automatizadas y aisladas.</p>
+</div>
+
+<div class="card">
+<h3>Protección de correo</h3>
+<p>Bloqueo de phishing y archivos maliciosos.</p>
+</div>
+
+<div class="card">
+<h3>MFA y accesos</h3>
+<p>Control total sobre usuarios y accesos remotos.</p>
+</div>
+
+<div class="card">
+<h3>Hardening</h3>
+<p>Configuración segura de sistemas y endpoints.</p>
+</div>
+
+</div>
+
+<h2>Solicitar diagnóstico</h2>
+<p>
+Analizamos tu infraestructura y detectamos vulnerabilidades antes de que sean explotadas.
+</p>
+
+<a href="https://wa.me/5491122937926" class="btn">Contactar ahora</a>
+
+</div>
+
+<footer>
+<p>© 2026 MATECH Soluciones Informáticas</p>
+</footer>
+
+<a href="https://wa.me/5491122937926" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
