@@ -2,41 +2,252 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Ransomware en empresas 2026 | MATECH</title>
+<title>Ransomware en empresas: cómo proteger tu pyme en 2026 | MATECH</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cómo proteger tu empresa del ransomware en 2026. Guía completa para pymes en Buenos Aires con medidas reales de ciberseguridad.">
 
-<link rel="stylesheet" href="../assets/styles.css">
+<link rel="icon" href="../assets/favicon.ico">
+
+<style>
+:root {
+  --bg:#020617;
+  --panel:#020617f2;
+  --card:#020617e6;
+  --primary:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:system-ui;
+  background:url("../assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg") center/cover fixed;
+  color:var(--text);
+  padding-top:70px;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#020617;
+  border-bottom:1px solid #1e293b;
+  z-index:1000;
+}
+
+.nav-container{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+}
+
+.nav-logo img{
+  height:40px;
+}
+
+.nav-links a{
+  margin-left:20px;
+  color:#fff;
+}
+
+.nav-links a:hover{
+  color:var(--primary);
+}
+
+.nav-cta{
+  background:var(--primary);
+  padding:8px 14px;
+  border-radius:6px;
+  color:#020617;
+  font-weight:bold;
+}
+
+/* HERO */
+header{
+  text-align:center;
+  padding:140px 20px 100px;
+  background:rgba(2,6,23,.85);
+}
+
+.logo{
+  max-width:240px;
+  margin-bottom:20px;
+}
+
+header h1{
+  font-size:2.3rem;
+  margin-bottom:15px;
+}
+
+.subtitle{
+  max-width:700px;
+  margin:auto;
+  color:var(--muted);
+}
+
+/* CONTENT */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+h2{
+  margin-top:40px;
+  margin-bottom:15px;
+  color:var(--primary);
+}
+
+p{
+  margin-bottom:15px;
+  color:var(--muted);
+}
+
+ul{
+  margin:15px 0 25px 20px;
+}
+
+li{
+  margin-bottom:8px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 24px;
+  border-radius:8px;
+  background:var(--primary);
+  color:#020617;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid #1e293b;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  color:#fff;
+  text-decoration:none;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
 <nav class="navbar">
-<div class="nav-container">
-<a href="../index.html">MATECH</a>
-<div class="nav-links">
-<a href="../index.html">Inicio</a>
-<a href="../proteccion-ransomware-pymes.html">Ciberseguridad</a>
-<a href="../climatizacion.html">Climatización</a>
-<a href="ransomware-empresas-2026.html">Blog</a>
-<a href="https://wa.me/5491122937926" class="nav-cta">Contacto</a>
-</div>
-</div>
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/Gemini_Generated_Image_.png">
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="../proteccion-ransomware-pymes.html">Ciberseguridad</a>
+      <a href="../climatizacion.html">Climatización</a>
+      <a href="ransomware-empresas-2026.html">Blog</a>
+      <a href="https://wa.me/5491122937926" class="nav-cta">Contacto</a>
+    </div>
+  </div>
 </nav>
 
 <header>
-<h2>Blog de Ciberseguridad</h2>
+  <img src="../assets/Gemini_Generated_Image_.png" class="logo">
+  <h1>Ransomware en empresas: cómo proteger tu pyme en 2026</h1>
+  <p class="subtitle">
+    Guía práctica para evitar pérdidas de datos, ataques y caída operativa en empresas.
+  </p>
 </header>
 
 <div class="container">
 
-<h1>Ransomware en empresas: cómo proteger tu pyme en 2026</h1>
+<p>
+El ransomware sigue siendo una de las principales amenazas para empresas en Argentina. En 2026, los ataques están automatizados y apuntan especialmente a pymes con configuraciones débiles.
+</p>
 
-<p>Contenido del artículo...</p>
+<h2>¿Qué es el ransomware?</h2>
+<p>
+Es un malware que cifra los datos de una empresa y exige un pago para liberarlos. En muchos casos, aunque se pague, la información no se recupera completamente.
+</p>
 
-<a href="../index.html">Volver</a>
+<h2>¿Cómo ingresan los ataques?</h2>
+<ul>
+<li>Correos de phishing</li>
+<li>Descargas maliciosas</li>
+<li>Accesos remotos inseguros (RDP)</li>
+<li>Sistemas sin actualizar</li>
+</ul>
+
+<h2>¿Por qué las pymes son el objetivo?</h2>
+<ul>
+<li>Baja inversión en seguridad</li>
+<li>Falta de monitoreo</li>
+<li>Usuarios sin capacitación</li>
+<li>Mala configuración de Microsoft 365</li>
+</ul>
+
+<h2>Cómo proteger tu empresa</h2>
+<ul>
+<li>Backups fuera de línea</li>
+<li>MFA obligatorio</li>
+<li>Protección de correo</li>
+<li>Segmentación de red</li>
+<li>Monitoreo continuo</li>
+</ul>
+
+<h2>Impacto real de un ataque</h2>
+<ul>
+<li>Pérdida total de datos</li>
+<li>Parálisis del negocio</li>
+<li>Costos elevados</li>
+<li>Daño reputacional</li>
+</ul>
+
+<h2>Protección profesional</h2>
+<p>
+Implementar medidas reales requiere experiencia. En MATECH analizamos tu infraestructura y aplicamos controles de seguridad adaptados a tu empresa.
+</p>
+
+<a href="../proteccion-ransomware-pymes.html" class="btn">
+Ver servicio de protección contra ransomware
+</a>
+
+<br><br>
+
+<a href="https://wa.me/5491122937926" class="btn">
+Solicitar diagnóstico por WhatsApp
+</a>
 
 </div>
+
+<footer>
+<p>© 2026 MATECH Soluciones Informáticas</p>
+</footer>
+
+<a href="https://wa.me/5491122937926" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
