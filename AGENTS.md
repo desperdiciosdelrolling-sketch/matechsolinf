@@ -22,6 +22,11 @@ Objetivo del sitio: que el visitante entienda el riesgo y pida una consulta.
   en el mismo cambio, y revisar links internos que apunten a ella.
 - Toda página nueva necesita <title> y <meta name="description">.
 - El sitio se tiene que ver bien en celular. Probar siempre a 375px de ancho.
+- Excepción a lo anterior: se permite el script de analítica web
+  (Cloudflare Web Analytics). Ninguna otra dependencia externa.
+- Formularios: se permite un endpoint externo de formularios
+  (Formspree o similar). El sitio tiene que seguir siendo usable
+  sin JavaScript en todo lo demás.
 
 ## Mensajes de commit
 Describir qué cambió de verdad, en español, en una línea.
